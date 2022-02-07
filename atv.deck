@@ -1,0 +1,99 @@
+[[keys]]
+  index = 1
+  [keys.widget]
+    id = "button"
+    [keys.widget.config]
+    icon = "assets/up.png"
+    color = "#fefefe"
+    flatten = "true"
+  [keys.action]
+    exec = "/usr/bin/hass-cli service call --arguments entity_id=remote.office,command=up remote.send_command"
+
+[[keys]]
+  index = 4
+  [keys.widget]
+    id = "button"
+    [keys.widget.config]
+      icon = "assets/volume-high.png"
+      label = "Raise Vol"
+      fontsize = 8
+  [keys.action]
+    exec = "/usr/bin/hass-cli service call --arguments entity_id=remote.office,command=volume_up remote.send_command"
+[[keys]]
+  index = 9
+  [keys.widget]
+    id = "button"
+    [keys.widget.config]
+      icon = "assets/volume-low.png"
+      label = "Lower Vol"
+      fontsize = 8
+  [keys.action]
+    exec = "/usr/bin/hass-cli service call --arguments entity_id=remote.office,command=volume_down remote.send_command"
+[[keys]]
+  index = 5
+  [keys.widget]
+    id = "button"
+    [keys.widget.config]
+    icon = "assets/left.png"
+    color = "#fefefe"
+    flatten = "true"
+  [keys.action]
+    exec = "/usr/bin/hass-cli service call --arguments entity_id=remote.office,command=left remote.send_command"
+[[keys]]
+  index = 6
+  [keys.widget]
+    id = "button"
+    [keys.widget.config]
+    icon = "assets/dot.png"
+    color = "#fefefe"
+    flatten = "true"
+  [keys.action]
+    exec = "/usr/bin/hass-cli service call --arguments entity_id=remote.office,command=select remote.send_command"
+[[keys]]
+  index = 7
+  [keys.widget]
+    id = "button"
+    [keys.widget.config]
+    flatten = "true"
+    icon = "assets/right.png"
+  [keys.action]
+    exec = "/usr/bin/hass-cli service call --arguments entity_id=remote.office,command=right remote.send_command"
+[[keys]]
+  index = 10 
+  [keys.widget]
+    id = "button"
+    [keys.widget.config]
+      label = "home"
+  [keys.action]
+    exec = "/usr/bin/hass-cli service call --arguments entity_id=remote.office,command=home remote.send_command"
+  [keys.hold_action]
+    exec = "/usr/bin/hass-cli service call --arguments entity_id=remote.office,command=home_hold remote.send_command"
+[[keys]]
+  index = 11 
+  [keys.widget]
+    id = "button"
+    [keys.widget.config]
+    color = "#fefefe"
+    flatten = "true"
+    icon = "assets/down.png"
+  [keys.action]
+    exec = "/usr/bin/hass-cli service call --arguments entity_id=remote.office,command=down remote.send_command"
+[[keys]]
+  index = 12
+  [keys.widget]
+    id = "button"
+    [keys.widget.config]
+      label = "menu"
+  [keys.action]
+    exec = "/usr/bin/hass-cli service call --arguments entity_id=remote.office,command=menu remote.send_command"
+  [keys.hold_action]
+    exec = "/usr/bin/hass-cli service call --arguments entity_id=remote.office,command=top_menu remote.send_command"
+[[keys]]
+  index = 14
+  [keys.widget]
+    id = "button"
+    [keys.widget.config]
+      label = "Back"
+      icon = "assets/go-previous.png"
+  [keys.action]
+    deck = "main.deck"

@@ -70,4 +70,4 @@
       icon = "assets/go-previous.png"
       label = "Back"
   [keys.action]
-    deck = "../main.deck"
+    deck = "./main.deck"

@@ -116,10 +116,11 @@
 [[keys]]
   index = 13
   [keys.widget]
-    id = "recentWindow"
+    id = "button"
     [keys.widget.config]
-      window = 4
-      showTitle = true
+      icon = "assets/atv.png"
+  [keys.action]
+    deck = "atv.deck"
 
 [[keys]]
   index = 14
